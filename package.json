@@ -1,0 +1,25 @@
+{
+  "name": "base-wallet-tools",
+  "version": "1.0.0",
+  "description": "Wallet utilities for Base L2",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha test/**/*.test.js --timeout 30000",
+    "check-wallet": "node scripts/check_wallet.js",
+    "watch": "node scripts/watch_address.js",
+    "multi-send": "node scripts/multi_send.js",
+    "sign": "node scripts/sign_message.js",
+    "verify": "node scripts/verify_signature.js"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
